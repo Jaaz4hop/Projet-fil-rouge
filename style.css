@@ -5,7 +5,6 @@
     --tertiary-color-LR-ST: #f2f2f2;
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -29,12 +28,28 @@ nav {
 }
 
 nav a {
+    font-family: Gontserrat;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f2f2f2;
+}
+
+nav a:not(:last-of-type) {
     border-right: solid 1px var(--secondary-color-LR-ST);
+    padding-right: 10px;
+    height: 35px;
+    align-content: center;
 }
 
 header a{
     text-decoration: none;
     color: var(--secondary-color-LR-ST);
+}
+
+#logo  {
+    height: 55px;
 }
 
 #profil {
@@ -58,4 +73,8 @@ header a{
     height: 40px;
     border-radius: 10px;
     border: solid 1px var(--secondary-color-LR-ST-contrasted)
+}
+
+#banner img {
+    height: 274px;
 }
