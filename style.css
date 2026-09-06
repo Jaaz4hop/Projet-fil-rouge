@@ -3,4 +3,6 @@
     --secondary-color-LR-ST: #0D0D0D;
     --secondary-color-LR-ST-contrasted: #211d1d;
     --tertiary-color-LR-ST: #f2f2f2;
+    --title-font: 'Gontserrat', sans-serif;
+    --text-font : 'Liberation Sans', Arial, sans-serif;
 }

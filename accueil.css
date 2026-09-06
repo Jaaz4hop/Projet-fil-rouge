@@ -12,41 +12,63 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 82px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    a {
+        text-decoration: none;
+        color: var(--secondary-color-LR-ST);
+    }
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: max-content; /* S'adapte automatiquement au contenu + padding */
+  height: 50px;
+  border: solid 2px var(--secondary-color-LR-ST);
+  box-sizing: border-box;
+
+  a {
+    position: relative;
     display: flex;
-    border: solid 2px var(--secondary-color-LR-ST);
-    width: 365px;
-    height: 50px;
     align-items: center;
-    justify-content: space-around;
-}
-
-nav a {
-    font-family: Gontserrat;
+    justify-content: center;
+    height: 100%;
+    padding: 0 12px; 
+    font-family: 'Gontserrat', sans-serif;
     font-weight: bold;
-}
-
-nav a:hover {
-    color: #f2f2f2;
-}
-
-nav a:not(:last-of-type) {
-    border-right: solid 1px var(--secondary-color-LR-ST);
-    padding-right: 10px;
-    height: 35px;
-    align-content: center;
-}
-
-header a{
     text-decoration: none;
     color: var(--secondary-color-LR-ST);
+    width: max-content;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #f2f2f2;
+    }
+
+    /* Le séparateur de 35px */
+    &:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      right: 0;  
+      width: 1px;
+      height: 35px;
+      background-color: var(--secondary-color-LR-ST);
+    }
+  }
 }
 
-#logo  {
-    height: 55px;
+#logo {
+    height: 56px;
+    img {
+        height: 56px;
+    }
 }
+
 
 #profil {
     background-color: var(--secondary-color-LR-ST);
@@ -77,6 +99,76 @@ main {
     flex-direction: column;
 }
 
-#banner img {
-    height: 240px;
+#banner {
+  width: 100%;
+  height: 270px; /* Ajuste la hauteur souhaitée pour ta bannière */
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Conserve le ratio sans déformer l'image */
+    object-position: center; /* Ajuste selon la zone importante (ex: center top) */
+  }
+}
+
+#titles {
+    width: 100vw;
+    text-align: center;
+    color: var(--primary-color-LR);
+    font-family: Gontserrat;
+    h2 {
+        background-color: var(--secondary-color-LR-ST-contrasted);
+        font-weight: 500;
+    }
+}
+
+
+h3 {
+    color: var(--primary-color-LR);
+    border-bottom: solid 1px var(--primary-color-LR);
+    align-self: start;
+    width: 150px;
+    margin-left: 40px;
+    padding-bottom: 5px;
+    font-family: Gontserrat;
+}
+
+#matchCards {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.cards {
+    width: 220px;
+    height: 150px;
+    background-color: var(--primary-color-LR);
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    font-family: Gontserrat;
+}
+
+.topCard {
+    background-color: var(--secondary-color-LR-ST-contrasted);
+    text-align: center;
+    color: var(--primary-color-LR);
+    font-weight: lighter;
+}
+
+
+@media (max-width: 768px) {
+  #banner {
+    height: 200px;
+  }
+  nav, #profil {
+    display: none;
+  }
 }
