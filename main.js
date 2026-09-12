@@ -1,10 +1,3 @@
-const options = {
-  method: 'GET',
-  headers: {
-    accept: 'application/json',
-    'x-api-key': 'mAA8fg86dGMwAMZOU1T5f6PAKI8WfIEpvo2iqewC'
-  }
-};
 
 async function chargerDonnees() {
     try {
