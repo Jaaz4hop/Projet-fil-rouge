@@ -1,0 +1,72 @@
+@import url(style.css);
+@import url(accueil.css);
+
+
+
+#personal-info fieldset {
+    color: var(--primary-color-LR);
+    background-color: var(--secondary-color-LR-ST-contrasted);
+    display: flex;
+    flex-flow: column;
+    border: 1px solid var(--primary-color-LR);
+    min-width: 400px;
+    margin-bottom: 50px;
+}
+
+input[type="button"] {
+    background-color: var(--primary-color-LR);
+    border: solid 1px var(--secondary-color-LR-ST);
+    color: var(--secondary-color-LR-ST);
+    border-radius: 50px;
+    width: 75px;
+    align-self: end;
+    &:hover {
+        color: var(--tertiary-color-LR-ST);
+        background-color: var(--secondary-color-LR-ST);
+    }
+}
+
+#club-selector fieldset {
+    color: var(--primary-color-LR);
+    background-color: var(--secondary-color-LR-ST-contrasted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--primary-color-LR);
+    margin-bottom: 50px;
+}
+
+#container {
+    display: flex;
+    min-width: 1400px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+fieldset input{
+    margin-bottom: 10px;
+    background-color: var(--secondary-color-LR-ST-contrasted);
+    border: none;
+    color: var(--primary-color-LR);
+}
+
+.club-toggle-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    height: 18px;
+    width: 60px;
+    background-color: var(--tertiary-color-LR-ST);
+    border-radius: 5rem;   
+}
+
+fieldset div img {
+    height: auto;
+    width: 60px;
+}

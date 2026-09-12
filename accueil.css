@@ -168,11 +168,11 @@ h4, h5, h6 {
 }
 
 .home-date-away {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px; /* Augmente le padding horizontal */
-  border-bottom: 2px solid var(--secondary-color-LR-ST);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px; /* Augmente le padding horizontal */
+    border-bottom: 2px solid var(--secondary-color-LR-ST);
 }
 
 .home-date-away i {
@@ -186,34 +186,45 @@ h4, h5, h6 {
 }
 
 .match-teams {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 10px;
-  padding-left: 15px; /* Compense le margin-left: -15px de .home-team */
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 10px;
+}
+
+.match-teams::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--secondary-color-LR-ST);
+    transform: translateX(-50%);
 }
 
 .home-team, .away-team {
     display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.home-team {
+  border-right: none; /* Supprime l'ancienne bordure */
+  margin-left: 0;
 }
 
 h6 {
     margin-bottom: 5px;
 }
 
-.home-team {
-  border-right: solid 2px var(--secondary-color-LR-ST);
-  margin-left: 0; /* Supprime le décalage */
-  padding-right: 15px; /* Espace entre la bordure et l'équipe */
-}
-
 .home-team img, .away-team img {
-    height: 60px; /* ou height: 60px; */
-    width: auto; /* Conserve le ratio */
-    object-fit: contain; /* Évite les déformations */
-    margin-top: auto; /* Alignement vertical */
+    height: 60px;
+    width: auto; 
+    object-fit: contain; 
+    margin: auto;
 }
 
 footer {
@@ -236,7 +247,6 @@ footer {
 
 #footer-logo {
     justify-self: center;
-    border-inline: solid 2px var(--secondary-color-LR-ST);
     padding-inline: 40px;
 }
 
@@ -259,7 +269,6 @@ footer {
     transition: color 0.2s ease;
     margin-inline: 10px;
     padding-inline: 10px;
-    border-right: 2px solid var(--secondary-color-LR-ST);
     &:hover {
       color: #f2f2f2;
     }
