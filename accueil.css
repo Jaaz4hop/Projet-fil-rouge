@@ -157,10 +157,33 @@ h4, h5, h6 {
 }
 
 .topCard {
+    display: flex;
     background-color: var(--secondary-color-LR-ST-contrasted);
-    text-align: center;
     color: var(--primary-color-LR);
     font-weight: lighter;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-date-away {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 7px;
+    margin-top: 5px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--secondary-color-LR-ST);
+}
+
+.match-teams {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.home-team, .away-team {
+    display: flex;
+    flex-flow: column;
 }
 
 footer {
