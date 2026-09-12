@@ -152,14 +152,6 @@ h3 {
     flex-flow: column;
 }
 
-.cards {
-    width: 220px;
-    background-color: var(--primary-color-LR);
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
 h4, h5, h6 {
     margin: 0;
     font-family: var(--title-font);
@@ -176,12 +168,11 @@ h4, h5, h6 {
 }
 
 .home-date-away {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Centre verticalement */
-    padding: 5px 10px; /* Espacement interne */
-    border-bottom: 2px solid var(--secondary-color-LR-ST);
-    margin: 0; /* Réinitialise les marges */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px; /* Augmente le padding horizontal */
+  border-bottom: 2px solid var(--secondary-color-LR-ST);
 }
 
 .home-date-away i {
@@ -195,16 +186,17 @@ h4, h5, h6 {
 }
 
 .match-teams {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  padding-left: 15px; /* Compense le margin-left: -15px de .home-team */
 }
 
 .home-team, .away-team {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    padding-inline: 10px;
 }
 
 h6 {
@@ -212,8 +204,9 @@ h6 {
 }
 
 .home-team {
-    border-right: solid 2px var(--secondary-color-LR-ST);
-    margin-left: -15px;
+  border-right: solid 2px var(--secondary-color-LR-ST);
+  margin-left: 0; /* Supprime le décalage */
+  padding-right: 15px; /* Espace entre la bordure et l'équipe */
 }
 
 .home-team img, .away-team img {
