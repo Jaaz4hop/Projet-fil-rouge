@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 82px;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,11 +23,11 @@ header {
     }
 }
 
-nav {
+#nav1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: max-content; /* S'adapte automatiquement au contenu + padding */
+  width: max-content;
   height: 50px;
   border: solid 2px var(--secondary-color-LR-ST);
   box-sizing: border-box;
@@ -62,7 +62,7 @@ nav {
   }
 }
 
-#logo {
+#logo, #footer-logo {
     height: 56px;
     img {
         height: 56px;
@@ -101,7 +101,7 @@ main {
 
 #banner {
   width: 100%;
-  height: 270px; /* Ajuste la hauteur souhaitée pour ta bannière */
+  height: 270px;
   overflow: hidden;
   position: relative;
 
@@ -138,7 +138,7 @@ h3 {
 #matchCards {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between ;
+    justify-content: space-around ;
     align-items: center;
 }
 
@@ -163,12 +163,55 @@ h4, h5, h6 {
     font-weight: lighter;
 }
 
+footer {
+    background-color: var(--primary-color-LR);
+    height: 60px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#RS {
+    display: flex;
+    gap: 15px;
+    a {
+        color: var(--secondary-color-LR-ST);
+    }
+}
+
+#footer-logo {
+    justify-self: center;
+}
+
+#lang-flags {
+    display: flex;
+    gap: 15px;
+}
+
+#nav2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#nav2 a {
+    text-decoration: none;
+    color: var(--secondary-color-LR-ST);
+    font-family: 'Gontserrat', sans-serif;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    margin-inline: 10px;
+    &:hover {
+      color: #f2f2f2;
+    }
+}
 
 @media (max-width: 768px) {
   #banner {
     height: 200px;
   }
-  nav, #profil {
+  #nav1, #profil {
     display: none;
   }
 }
