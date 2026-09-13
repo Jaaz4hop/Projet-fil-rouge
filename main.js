@@ -18,72 +18,72 @@ const logosShort = [
     {
         team: 'Stade Rochelais',
         short: 'SR',
-        Logo: 'Images/Logos/Logo-SR'
+        Logo: 'Images/Logos/Logo-SR.png'
     },
     {
         team: 'Aviron Bayonnais',
         short: 'AB',
-        Logo: 'Images/Logos/Logo-AB'
+        Logo: 'Images/Logos/Logo-AB.svg'
     },
     {
         team: 'ASM Clermont',
         short: 'ASM',
-        Logo: 'Images/Logos/Logo-ASM'
+        Logo: 'Images/Logos/Logo-ASM.png'
     },
     {
         team: 'Castres Olympique',
         short: 'CO',
-        Logo: 'Images/Logos/Logo-CO'
+        Logo: 'Images/Logos/Logo-CO.webp'
     },
     {
         team: 'LOU Rugby',
         short: 'LOU',
-        Logo: 'Images/Logos/Logo-LOU'
+        Logo: 'Images/Logos/Logo-LOU.webp'
     },
     {
         team: 'Montpellier Hérault Rugby',
         short: 'MHR',
-        Logo: 'Images/Logos/Logo-MHR'
+        Logo: 'Images/Logos/Logo-MHR.png'
     },
     {
         team: 'Racing 92',
         short: 'R92',
-        Logo: 'Images/Logos/Logo-R92'
+        Logo: 'Images/Logos/Logo-R92.png'
     },
     {
         team: 'RC Toulon',
         short: 'RCT',
-        Logo: 'Images/Logos/Logo-RCT'
+        Logo: 'Images/Logos/Logo-RCT.png'
     },
     {
         team: 'RC Vannes',
         short: 'RCV',
-        Logo: 'Images/Logos/Logo-RCV'
+        Logo: 'Images/Logos/Logo-RCV.svg'
     },
     {
         team: 'Stade Français Paris',
         short: 'SF',
-        Logo: 'Images/Logos/Logo-SF'
+        Logo: 'Images/Logos/Logo-SF.png'
     },
     {
         team: 'Section Paloise',
         short: 'SP',
-        Logo: 'Images/Logos/Logo-SP'
+        Logo: 'Images/Logos/Logo-SP.png'
     },
     {
         team: 'Stade Toulousain',
         short: 'ST',
-        Logo: 'Images/Logos/Logo-ST'
+        Logo: 'Images/Logos/Logo-ST.png'
     },
     {
         team: 'Union Bordeaux-Bègles',
         short: 'UBB',
-        Logo: 'Images/Logos/Logo-UBB'
+        Logo: 'Images/Logos/Logo-UBB.png'
     },
     {
         team: 'USA Perpignan',
         short: 'USAP',
-        Logo: 'Images/Logos/Logo-USAP'
+        Logo: 'Images/Logos/Logo-USAP.png'
     }
 ];
 
