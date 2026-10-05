@@ -36,12 +36,6 @@ input[type="button"] {
     margin-bottom: 50px;
 }
 
-/* #container {
-    display: flex;
-    min-width: 1400px;
-    justify-content: space-around;
-    align-items: center;
-} */
 
 #container {
     display: flex;
@@ -60,12 +54,6 @@ fieldset input{
     color: var(--primary-color-LR);
 }
 
-/* .club-toggle-switch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-} */
 
 .club-toggle-switch {
     display: flex;
@@ -75,15 +63,6 @@ fieldset input{
     width: 80px; /* Largeur uniforme */
     height: 100px; /* Hauteur fixe pour l'alignement */
 }
-
-/* input[type="checkbox"] {
-    appearance: none;
-    position: relative;
-    height: 18px;
-    width: 60px;
-    background-color: var(--tertiary-color-LR-ST);
-    border-radius: 5rem;   
-} */
 
 input[type="checkbox"] {
     appearance: none;
