@@ -90,7 +90,7 @@ const logosShort = [
 //Fonction pour récupérer le logo d'une équipe
 function getLogo(teamName) {
     const logo = logosShort.find(logo => logo.team === teamName);
-    //Ligne d'en deçous me pertmet d'afficher un logo générique top 14 au cas ou le logo de l'équipe ne marche pas.
+    //Ligne d'en deçous me permet d'afficher un logo générique top 14 au cas ou le logo de l'équipe ne marche pas.
     return logo ? logo.Logo : 'Images/Logos/Logo-top14.webp';
 }
 
@@ -201,6 +201,40 @@ function displayMatches(dayDatab) {
   });
 }
 
-// ===== CHARGEMENT INITIAL =====
-// Affiche les matchs quand la page est chargée
-document.addEventListener('DOMContentLoaded', displayMatches(matchesJ3));
+// ---- Menu burger (mobile) ----
+function initBurger() {
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav1');
+
+    // Si la page n'a pas de burger (ou si on est en desktop), on ne fait rien
+    if (!burger || !nav) return;
+
+    burger.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        burger.classList.toggle('open', isOpen);
+        burger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Ferme le menu quand on clique sur un lien
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            burger.classList.remove('open');
+            burger.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    // Bonus : ferme le menu si on repasse en desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 860) {
+            nav.classList.remove('open');
+            burger.classList.remove('open');
+            burger.setAttribute('aria-expanded', 'false');
+        }
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    displayMatches(matchesJ3);
+    initBurger();
+});

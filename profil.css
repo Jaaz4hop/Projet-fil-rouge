@@ -44,13 +44,13 @@ input[type="button"] {
 } */
 
 #container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-end; /* Aligne le bas des switches */
-  gap: 20px;
-  min-width: 0;
-  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end; /* Aligne le bas des switches */
+    gap: 20px;
+    min-width: 0;
+    padding: 20px;
 }
 
 fieldset input{
@@ -68,12 +68,12 @@ fieldset input{
 } */
 
 .club-toggle-switch {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end; /* Aligne l'input en bas */
-  width: 80px; /* Largeur uniforme */
-  height: 100px; /* Hauteur fixe pour l'alignement */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Aligne l'input en bas */
+    width: 80px; /* Largeur uniforme */
+    height: 100px; /* Hauteur fixe pour l'alignement */
 }
 
 /* input[type="checkbox"] {
@@ -86,15 +86,15 @@ fieldset input{
 } */
 
 input[type="checkbox"] {
-  appearance: none;
-  position: relative;
-  height: 18px;
-  width: 60px;
-  background-color: var(--tertiary-color-LR-ST);
-  border-radius: 5rem;
-  margin-top: auto; /* Aligne en bas */
-  margin-bottom: 0;
-  transition: background-color .2s;
+    appearance: none;
+    position: relative;
+    height: 18px;
+    width: 60px;
+    background-color: var(--tertiary-color-LR-ST);
+    border-radius: 5rem;
+    margin-top: auto; /* Aligne en bas */
+    margin-bottom: 0;
+    transition: background-color .2s;
 }
 
 input[type="checkbox"]::after {
@@ -116,14 +116,14 @@ input[type="checkbox"]:checked {
 
 input[type="checkbox"]:checked::after {
     left: 85%;
-    background-color: var(--secondary-color-LR-ST);
+    background-color: var(--secondary-color-LR-ST-contrasted);
 }
 
 .club-toggle-switch img {
-  max-width: 60px;
-  max-height: 60px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: auto; /* Espace flexible */
+    max-width: 60px;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: auto; /* Espace flexible */
 }
