@@ -3,72 +3,72 @@ const logosShort = [
     {
         team: 'Stade Rochelais',
         short: 'SR',
-        Logo: 'Images/Logos/Logo-SR.png'
+        Logo: './src/img/Logos/Logo-SR.png'
     },
     {
         team: 'Aviron Bayonnais',
         short: 'AB',
-        Logo: 'Images/Logos/Logo-AB.svg'
+        Logo: './src/img/Logos/Logo-AB.svg'
     },
     {
         team: 'ASM Clermont',
         short: 'ASM',
-        Logo: 'Images/Logos/Logo-ASM.png'
+        Logo: './src/img/Logos/Logo-ASM.png'
     },
     {
         team: 'Castres Olympique',
         short: 'CO',
-        Logo: 'Images/Logos/Logo-CO.webp'
+        Logo: './src/img/Logos/Logo-CO.webp'
     },
     {
         team: 'LOU Rugby',
         short: 'LOU',
-        Logo: 'Images/Logos/Logo-LOU.webp'
+        Logo: './src/img/Logos/Logo-LOU.webp'
     },
     {
         team: 'Montpellier Hérault Rugby',
         short: 'MHR',
-        Logo: 'Images/Logos/Logo-MHR.png'
+        Logo: './src/img/Logos/Logo-MHR.png'
     },
     {
         team: 'Racing 92',
         short: 'R92',
-        Logo: 'Images/Logos/Logo-R92.png'
+        Logo: './src/img/Logos/Logo-R92.png'
     },
     {
         team: 'RC Toulon',
         short: 'RCT',
-        Logo: 'Images/Logos/Logo-RCT.png'
+        Logo: './src/img/Logos/Logo-RCT.png'
     },
     {
         team: 'RC Vannes',
         short: 'RCV',
-        Logo: 'Images/Logos/Logo-RCV.svg'
+        Logo: './src/img/Logos/Logo-RCV.svg'
     },
     {
         team: 'Stade Français Paris',
         short: 'SF',
-        Logo: 'Images/Logos/Logo-SF.png'
+        Logo: './src/img/Logos/Logo-SF.png'
     },
     {
         team: 'Section Paloise',
         short: 'SP',
-        Logo: 'Images/Logos/Logo-SP.png'
+        Logo: './src/img/Logos/Logo-SP.png'
     },
     {
         team: 'Stade Toulousain',
         short: 'ST',
-        Logo: 'Images/Logos/Logo-ST.png'
+        Logo: './src/img/Logos/Logo-ST.png'
     },
     {
         team: 'Union Bordeaux-Bègles',
         short: 'UBB',
-        Logo: 'Images/Logos/Logo-UBB.png'
+        Logo: './src/img/Logos/Logo-UBB.png'
     },
     {
         team: 'USA Perpignan',
         short: 'USAP',
-        Logo: 'Images/Logos/Logo-USAP.png'
+        Logo: './src/img/Logos/Logo-USAP.png'
     }
 ];
 
@@ -76,7 +76,7 @@ const logosShort = [
 function getLogo(teamName) {
     const logo = logosShort.find(logo => logo.team === teamName);
     //Ligne d'en deçous me permet d'afficher un logo générique top 14 au cas ou le logo de l'équipe ne marche pas.
-    return logo ? logo.Logo : 'Images/Logos/Logo-top14.webp';
+    return logo ? logo.Logo : './src/img/Logos/Logo-top14.webp';
 }
 
 //Fonction pour récupérer l'abréviation d'une équipe

@@ -47,5 +47,5 @@ function initBurger() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-      initBurger();
+    initBurger();
 });
