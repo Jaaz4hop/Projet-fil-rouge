@@ -223,8 +223,8 @@ h4, h5, h6 {
 }
 
 .home-team {
-  border-right: none; /* Supprime l'ancienne bordure */
-  margin-left: 0;
+    border-right: none; /* Supprime l'ancienne bordure */
+    margin-left: 0;
 }
 
 h6 {
@@ -292,7 +292,7 @@ footer {
     margin-inline: 10px;
     padding-inline: 10px;
     &:hover {
-      color: #f2f2f2;
+        color: #f2f2f2;
     }
 }
 
